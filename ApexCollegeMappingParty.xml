@@ -8,11 +8,11 @@
             <item name="Zebra Crossing" icon="presets/empty.png" type="node">
                 <key key="highway" value="crossing"/>
             </item>
-            <item name="Manholes" icon="presets/empty.png" type="node">
-                <text key="manhole" text="Covers"/>
+            <item name="Manhole" icon="presets/empty.png" type="node">
+                <multiselect key="manhole" text="Covers" values="water;sewer;drain;power;unknown" default="unknown" delete_if_empty="false"/>
             </item>
             <item name="Traffic signals" icon="presets/empty.png" type="node">
-                <multiselect key="traffic_signals" text="Specify one or two way" values="forward;backward"/>
+                <multiselect key="traffic_signals" text="Specify one or two way" values="forward;backward" default="forward" delete_if_empty="false"/>
                 <text key="ref" text="Reference number or code"/>
                 <key key="highway" value="traffic_signals"/>
             </item>
@@ -104,7 +104,6 @@
                 <key key="amenity" value="clinic"/>
             </item>
             <item name="Pharmacy" icon="presets/empty.png" type="node,closedway">
-                <multiselect key="dispensing" text="Sell unprescribed drug" values="yes;no"/>
                 <text key="name" text="Name"/>
                 <key key="amenity" value="pharmacy"/>
             </item>
@@ -125,15 +124,26 @@
                 <key key="office" value="government"/>
             </item>
         </group>
+        <group name="Places of Worship/Shrine/Festive Chariot" icon="presets/apexcollege.png">
+            <item name="Place of Worship" icon="presets/empty.png" type="node,closedway">
+                <text key="religion" text="Religion"/>
+                <key key="amenity" value="place_of_worship"/>
+                <combo key="building" text="Type of Building" values="temple,stupa,church,mosque" default="" delete_if_empty="true" />
+            </item>
+            <item name="Wayside Shrine/Festive Chariot" icon="presets/empty.png" type="node,closedway">
+                <combo key="historic" text="Wayside Shrine/Festive Chariot" values="wayside_shrine,chariot" default="" delete_if_empty="true" />
+            </item>
+            <item name="Tree Shrine" icon="presets/empty.png" type="node,closedway">
+                <key key="historic" value="wayside_shrine"/>
+                <key key="natural" value="tree"/>
+                <text key="name" text="Name" delete_if_empty="true"/>
+            </item>
+        </group>
         <group name="Tourism" icon="presets/apexcollege.png">
             <item name="ढुंगे धारा" icon="presets/empty.png" type="node">
                 <key key="historic" value="stone_tap"/>
                 <key key="dhungedhara" value="yes"/>
                 <key key="amenity" value="drinking_water"/>
-            </item>
-            <item name="Place of Worship" icon="presets/empty.png" type="node,closedway">
-                <text key="religion" text="Religion"/>
-                <key key="amenity" value="place_of_worship"/>
             </item>
             <item name="Monument" icon="presets/empty.png" type="node,closedway">
                 <text key="inscription" text="Type of inscription found"/>
@@ -143,7 +153,7 @@
                 <key key="historic" value="memorial"/>
             </item>
         </group>
-        <group name="Land Use" icon="presets/apexcollege.png">
+        <group name="Land-use" icon="presets/landuse.png">
             <item name="Mill/ Factory" icon="presets/empty.png" type="node,closedway">
                 <key key="landuse" value="industrial"/>
             </item>
@@ -161,7 +171,7 @@
                 <key key="amenity" value="marketplace"/>
             </item>
         </group>
-        <group name="Transportation" icon="presets/apexcollege.png">
+        <group name="Transportation" icon="presets/transportation.png">
             <item name="Petrol Pump" icon="presets/empty.png" type="node,closedway">
                 <key key="amenity" value="fuel"/>
             </item>
