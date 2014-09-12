@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0">
+    <!--  Groups -->
+
+    <group name="Apex College Mapping Party" icon="presets/apexcollege.png">
+
+        <group name="Roads" icon="presets/apexcollege.png">
+            <item name="Zebra Crossing" icon="presets/empty.png" type="node">
+                <key key="highway" value="crossing"/>
+            </item>
+            <item name="Manholes" icon="presets/empty.png" type="node">
+                <text key="manhole" text="Covers"/>
+            </item>
+            <item name="Traffic signals" icon="presets/empty.png" type="node">
+                <multiselect key="traffic_signals" text="Specify one or two way" values="forward;backward"/>
+                <text key="ref" text="Reference number or code"/>
+                <key key="highway" value="traffic_signals"/>
+            </item>
+            <item name="Street lamps" icon="presets/empty.png" type="node">
+                <key key="highway" value="street_lamp"/>
+            </item>
+            <item name="Highway" icon="presets/empty.png" type="way">
+                <multiselect key="highway" text="According to the traffic volume it carries" values="primary;service;secondary"/>
+            </item>
+            <item name="गल्लि" icon="presets/empty.png" type="way">
+                <key key="highway" value="footway"/>
+                <key key="galli" value="yes"/>
+            </item>
+        </group>
+        <group name="Financial" icon="presets/apexcollege.png">
+            <item name="Remittance" icon="presets/empty.png" type="node">
+                <key key="amenity" value="remittance"/>
+            </item>
+            <item name="Cooperatives" icon="presets/empty.png" type="node">
+                <key key="office" value="cooperative"/>
+            </item>
+            <item name="Banks" icon="presets/empty.png" type="node,closedway">
+                <multiselect key="atm" text="ATM" values="yes;no"/>
+                <multiselect key="survelliance" text="Camera" values="indoor;outdoor"/>
+                <text key="operator" text="Operator's Name"/>
+                <text key="name" text="Name"/>
+                <key key="amenity" value="bank"/>
+            </item>
+        </group>
+        <group name="Educational" icon="presets/apexcollege.png">
+            <item name="Libraries" icon="presets/empty.png" type="node">
+                <key key="amenity" value="library"/>
+            </item>
+            <item name="Schools" icon="presets/empty.png" type="node">
+                <text key="contact" text="Contact"/>
+                <text key="religion" text="Religion"/>
+                <text key="capacity" text="Number of pupils"/>
+                <text key="addr" text="Address"/>
+                <key key="amenity" value="school"/>
+                <text key="name" text="Name"/>
+                <key key="building" value="school"/>
+            </item>
+        </group>
+        <group name="Business" icon="presets/apexcollege.png">
+            <item name="Consultancy" icon="presets/empty.png" type="node">
+                <key key="office" value="consultancy"/>
+            </item>
+            <item name="Mall" icon="presets/empty.png" type="closedway">
+                <key key="building" value="yes"/>
+                <text key="name" text="Name"/>
+                <key key="shop" value="mall"/>
+            </item>
+            <item name="Man Power Company" icon="presets/empty.png" type="node">
+                <key key="office" value="employment_agency"/>
+            </item>
+        </group>
+        <group name="Entertainment" icon="presets/apexcollege.png">
+            <item name="Discos" icon="presets/empty.png" type="node,closedway">
+                <key key="amenity" value="nightclub"/>
+            </item>
+            <item name="Pubs" icon="presets/empty.png" type="node,closedway">
+                <key key="amenity" value="pub"/>
+            </item>
+            <item name="Cinema Hall" icon="presets/empty.png" type="node,closedway">
+                <text key="building" text="cinema"/>
+                <text key="operator" text="Operator"/>
+                <text key="name" text="Name"/>
+                <key key="amenity" value="cinema"/>
+            </item>
+        </group>
+        <group name="Health &amp; Fitness" icon="presets/apexcollege.png">
+            <item name="Swimming pool" icon="presets/empty.png" type="node">
+                <key key="leisure" value="swimming_pool"/>
+            </item>
+            <item name="Gym" icon="presets/empty.png" type="node">
+                <key key="amenity" value="gym"/>
+            </item>
+            <item name="Health clubs" icon="presets/empty.png" type="node">
+                <key key="amenity" value="fitness_center"/>
+            </item>
+        </group>
+        <group name="Health" icon="presets/apexcollege.png">
+            <item name="Veterinary" icon="presets/empty.png" type="node">
+                <text key="name" text="Name"/>
+                <key key="amenity" value="veterinary"/>
+            </item>
+            <item name="Clinic" icon="presets/empty.png" type="node">
+                <text key="name" text="Name"/>
+                <key key="amenity" value="clinic"/>
+            </item>
+            <item name="Pharmacy" icon="presets/empty.png" type="node,closedway">
+                <multiselect key="dispensing" text="Sell unprescribed drug" values="yes;no"/>
+                <text key="name" text="Name"/>
+                <key key="amenity" value="pharmacy"/>
+            </item>
+            <item name="Hospitals" icon="presets/empty.png" type="node">
+                <text key="name" text="Name"/>
+                <key key="amenity" value="hospital"/>
+            </item>
+        </group>
+        <group name="Government Offices" icon="presets/apexcollege.png">
+            <item name="Police station" icon="presets/empty.png" type="node,closedway">
+                <key key="amenity" value="police"/>
+            </item>
+            <item name="Local authorities, administrative and supervising institution" icon="presets/empty.png" type="node,closedway">
+                <text key="name" text="Name"/>
+                <key key="office" value="administrative"/>
+            </item>
+            <item name="Government Office" icon="presets/empty.png" type="node,closedway">
+                <key key="office" value="government"/>
+            </item>
+        </group>
+        <group name="Tourism" icon="presets/apexcollege.png">
+            <item name="ढुंगे धारा" icon="presets/empty.png" type="node">
+                <key key="historic" value="stone_tap"/>
+                <key key="dhungedhara" value="yes"/>
+                <key key="amenity" value="drinking_water"/>
+            </item>
+            <item name="Place of Worship" icon="presets/empty.png" type="node,closedway">
+                <text key="religion" text="Religion"/>
+                <key key="amenity" value="place_of_worship"/>
+            </item>
+            <item name="Monument" icon="presets/empty.png" type="node,closedway">
+                <text key="inscription" text="Type of inscription found"/>
+                <text key="memorial" text="Type of memorial"/>
+                <text key="historic: civilization" text="Civilization"/>
+                <text key="name" text="Name"/>
+                <key key="historic" value="memorial"/>
+            </item>
+        </group>
+        <group name="Land Use" icon="presets/apexcollege.png">
+            <item name="Mill/ Factory" icon="presets/empty.png" type="node,closedway">
+                <key key="landuse" value="industrial"/>
+            </item>
+            <item name="Playground" icon="presets/empty.png" type="node,closedway">
+                <key key="leisure" value="playground"/>
+            </item>
+            <item name="Open Spaces" icon="presets/empty.png" type="closedway">
+                <key key="leisure" value="common"/>
+            </item>
+            <item name="Tarkari Bazar" icon="presets/empty.png" type="closedway">
+                <key key="building" value="yes"/>
+                <text key="opening_hours" text="Opening hours"/>
+                <text key="operator" text="Operator"/>
+                <text key="name" text="Name"/>
+                <key key="amenity" value="marketplace"/>
+            </item>
+        </group>
+        <group name="Transportation" icon="presets/apexcollege.png">
+            <item name="Petrol Pump" icon="presets/empty.png" type="node,closedway">
+                <key key="amenity" value="fuel"/>
+            </item>
+            <item name="Parking" icon="presets/empty.png" type="node,closedway">
+                <key key="amenity" value="parking"/>
+            </item>
+            <item name="Bridges" icon="presets/empty.png" type="way">
+                <key key="bridge" value="yes"/>
+                <text key="highway" text="Name"/>
+            </item>
+            <item name="Taxi stands" icon="presets/empty.png" type="node,closedway">
+                <key key="amenity" value="taxi"/>
+            </item>
+            <item name="Bus-stop" icon="presets/empty.png" type="node">
+                <key key="highway" value="bus_stop"/>
+            </item>
+        </group>
+        <group name="Natural" icon="presets/apexcollege.png">
+            <item name="Rivers" icon="presets/empty.png" type="way">
+                <key key="landuse" value="reservoir"/>
+                <key key="natural" value="water"/>
+                <key key="waterway" value="river"/>
+            </item>
+            <item name="Streams" icon="presets/empty.png" type="way">
+                <key key="intermittent" value="yes"/>
+                <key key="tunnel" value="culvert"/>
+                <text key="width" text="Width"/>
+                <text key="name" text="Name"/>
+                <key key="waterway" value="stream"/>
+            </item>
+        </group>
+        <group name="Shops" icon="presets/apexcollege.png">
+            <item name="Auto workshop" icon="presets/empty.png" type="node,closedway">
+                <key key="shop" value="car_parts"/>
+            </item>
+            <item name="Boutique" icon="presets/empty.png" type="node,closedway">
+                <key key="shop" value="boutique"/>
+            </item>
+            <item name="Convenience Store" icon="presets/empty.png" type="node,closedway">
+                <text key="operator" text="Operator"/>
+                <text key="name" text="Name"/>
+                <key key="shop" value="convenience"/>
+            </item>
+            <item name="Organic food" icon="presets/empty.png" type="node,closedway">
+                <key key="shop" value="organic"/>
+            </item>
+        </group>
+        <group name="Emergency Services" icon="presets/apexcollege.png">
+            <item name="Fire station" icon="presets/empty.png" type="node,closedway">
+                <text key="name" text="Name"/>
+                <key key="amenity" value="fire_station"/>
+            </item>
+            <item name="Ambulance" icon="presets/empty.png" type="node,closedway">
+                <text key="operator" text="Operator"/>
+                <text key="name" text="Name"/>
+                <key key="emergency" value="ambulance_station"/>
+            </item>
+            <item name="Humanitarian Organization" icon="presets/empty.png" type="node,closedway">
+                <text key="name" text="Name"/>
+                <key key="office" value="ngo"/>
+            </item>
+        </group>
+        <group name="Utilities" icon="presets/apexcollege.png">
+            <item name="Public Toilets" icon="presets/empty.png" type="closedway">
+                <key key="building" value="yes"/>
+                <key key="amenity" value="toilets"/>
+            </item>
+            <item name="Dustbins" icon="presets/empty.png" type="node">
+                <key key="amenity" value="waste_basket"/>
+            </item>
+            <item name="ATM" icon="presets/empty.png" type="node">
+                <key key="amenity" value="atm"/>
+            </item>
+            <item name="Sewage/Pipelines" icon="presets/empty.png" type="way">
+                <text key="operator" text="Operator"/>
+                <text key="type" text="What it carries"/>
+                <text key="location" text="Location"/>
+                <key key="man_made" value="pipeline"/>
+            </item>
+        </group>
+        <group name="Power" icon="presets/apexcollege.png">
+            <item name="Pole-mounted Transformer" icon="presets/transformer.png">
+                <key key="power" value="pole"/>
+                <key key="transformer" value="yes"/>
+            </item>
+            <item name="Transformer" icon="presets/transformer.png">
+                <key key="power" value="transformer"/>
+            </item>
+        </group>
+        <item name="Prison" icon="presets/empty.png" type="node,closedway">
+            <text key="operator" text="Operator"/>
+            <text key="name" text="Name"/>
+            <key key="amenity" value="prison"/>
+        </item>
+        <item icon="presets/embessy.png" name="Embassy" type="node,closedway">
+            <text key="country" text="Country"/>
+            <text key="name" text="Name"/>
+            <key key="amenity" value="embassy"/>
+        </item>
+    </group>
+</presets>
